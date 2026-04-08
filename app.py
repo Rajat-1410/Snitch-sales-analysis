@@ -30,7 +30,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 # -------------------- LOAD DATA --------------------
-df = pd.read_csv("cleaned_business.csv")
+df = pd.read_csv(data/cleaned_business.csv)
 
 # -------------------- CLEANING --------------------
 df["City"] = df["City"].str.lower().replace({
